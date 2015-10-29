@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dashboard">
+    <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+
+    <title>OWNER LOGIN</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../gumfree/Theme/assets/css/bootstrap.css" rel="stylesheet">
+    <!--external css-->
+    <link href="../gumfree/Theme/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+        
+    <!-- Custom styles for this template -->
+    <link href="../gumfree/Theme/assets/css/style.css" rel="stylesheet">
+    <link href="../gumfree/Theme/assets/css/style-responsive.css" rel="stylesheet">
+
+    <!-- SWEETALERT CONFIRM -->
+    <script src="../bootstrap-sweetalert-master/lib/sweet-alert.js"></script>
+    <link rel="stylesheet" href="../bootstrap-sweetalert-master/lib/sweet-alert.css">
+    <link href="../bootstrap-sweetalert-master/assets/docs.css" rel="stylesheet">
+    <!-- SWEETALERT CONFIRM -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+      <!-- **********************************************************************************************************************************************************
+      MAIN CONTENT
+      *********************************************************************************************************************************************************** -->
+
+	  <div id="login-page">
+	  	<div class="container">
+	  	
+		      <form class="form-login" action="#">
+		      <!-- Untuk tentukan dye admin ke owner logincontroller.php -->
+		        <h2 class="form-login-heading">sign in now</h2>
+		        <div class="login-wrap">
+		            <input type="text" class="form-control" placeholder="User ID" autofocus>
+		            <br>
+		            <input type="password" class="form-control" placeholder="Password">
+		            <label class="checkbox">
+		                <span class="pull-right">
+		                    <a data-toggle="modal" href="login.html#myModal"> Forgot Password?</a>
+		
+		                </span>
+		            </label>
+		            <p><button class="btn btn-theme btn-block sweet-3" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-3']);">Sign In</button></p>
+<!-- 
+		            <button class="btn btn-theme btn-block sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);">SIGN IN</button> --><!-- 
+		            <button class="btn btn-theme btn-block" href="index.html" type="submit" onclick="myFunction()"><i class="fa fa-lock"></i> SIGN IN</button> -->
+		            		            
+		       
+		            <label class="checkbox">
+		                <span class="pull-center">
+		                Don't have an account yet?<br/>
+		                    <a data-toggle="modal" href="login.html#modalRegister"> Create An Account</a>
+		
+		                </span>
+		            <!-- <div class="login-social-link centered">
+		            <p>or you can sign in via your social network</p>
+		                <button class="btn btn-facebook" type="submit"><i class="fa fa-facebook"></i> Facebook</button>
+		                <button class="btn btn-twitter" type="submit"><i class="fa fa-twitter"></i> Twitter</button>
+		            </div>
+		            <div class="registration">
+		                Don't have an account yet?<br/>
+		                <a class="" href="#">
+		                    Create an account
+		                </a>
+		            </div> -->
+		
+		        </div>
+		
+		          <!-- Modal -->
+		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">Forgot Password ?</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Enter your e-mail address below to reset your password.</p>
+		                          <input type="text" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+		
+		                      </div>
+		                      <div class="modal-footer">
+		                          <button data-dismiss="modal" class="btn btn-default" type="button">Cancel</button>
+		                          <button class="btn btn-theme" type="button">Submit</button>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modal -->
+		
+					<!-- modalregister -->
+		          <div aria-hidden="true" aria-labelledby="ModalRegisterLabel" role="dialog" tabindex="-1" id="modalRegister" class="modal fade">
+		              <div class="modal-dialog">
+		                  <div class="modal-content">
+		                      <div class="modal-header">
+		                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		                          <h4 class="modal-title">New Register</h4>
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Company Name</p>
+		                          <input type="text" name="company" placeholder="Company Name" autocomplete="off" class="form-control placeholder-no-fix">
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Full Name</p>
+		                          <input type="text" name="fname" placeholder="Full Name" autocomplete="off" class="form-control placeholder-no-fix">
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>IC Number</p>
+		                          <input type="text" name="icnum" placeholder="Identification Number" autocomplete="off" class="form-control placeholder-no-fix">
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Contact Number</p>
+		                          <input type="text" name="contactno" placeholder="Contact Number" autocomplete="off" class="form-control placeholder-no-fix">
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Email</p>
+		                          <input type="email" name="email" placeholder="Email" autocomplete="off" class="form-control placeholder-no-fix">
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Password</p>
+		                          <input type="password" name="pass" placeholder="Password" autocomplete="off" class="form-control placeholder-no-fix">
+		                      </div>
+		                      <div class="modal-body">
+		                          <p>Retype Password</p>
+		                          <input type="password" name="retypepass" placeholder="Retype Password" autocomplete="off" class="form-control placeholder-no-fix">
+		                      </div>
+		                      <div class="modal-footer">
+		                <button type="button" class="btn btn-default"><a href="login.html">Cancel</a></button>
+		           <button class="btn btn-default btn-primary sweet-2" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-2']);">REGISTER</button>
+		                      </div>
+		                  </div>
+		              </div>
+		          </div>
+		          <!-- modalregister -->
+
+		      </form>	  	
+	  	
+	  	</div>
+	  </div>
+
+    <!-- js placed at the end of the document so the pages load faster -->
+    <script src="../gumfree/Theme/assets/js/jquery.js"></script>
+    <script src="../gumfree/Theme/assets/js/bootstrap.min.js"></script>
+
+    <!--BACKSTRETCH-->
+    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
+    <script type="text/javascript" src="../gumfree/Theme/assets/js/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("../picture/loginbg.jpg", {speed: 500});
+    </script>
+
+    <!-- SWEETALERT -->
+<script type="text/javascript">
+
+  		document.querySelector('.sweet-3').onclick = function(){
+        swal({
+          title: "Login Success!",
+          type: "success",
+          showCancelButton: true,
+          confirmButtonClass: 'btn-primary',
+          confirmButtonText: 'OK',
+          closeOnConfirm: false,
+        },
+        function(isConfirm){
+          if (isConfirm){
+            window.location.href = 'ownerpage.html';
+          } else {
+            swal("Cancelled login");
+          }
+        });
+      };
+</script>
+<script type="text/javascript">
+
+  		document.querySelector('.sweet-2').onclick = function(){
+        swal({
+          title: "Registration Complete!",
+          type: "success",
+          showCancelButton: true,
+          confirmButtonClass: 'btn-primary',
+          confirmButtonText: 'OK',
+          closeOnConfirm: false,
+        },
+        function(isConfirm){
+          if (isConfirm){
+            window.location.href = 'login.html';
+          } else {
+            swal("Cancelled Register");
+          }
+        });
+      };
+</script>
+
+    <!-- SWEETALERT -->
+    
+  </body>
+</html>
