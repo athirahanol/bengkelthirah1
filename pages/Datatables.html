@@ -9,6 +9,9 @@
 
     <title>Previous Promotion Page</title>
 
+   <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="../CSS/prattbootstrap.css" rel="stylesheet">
 
@@ -16,7 +19,7 @@
     <link href="../CSS/prattmain.css" rel="stylesheet">
 
 
-    <link href="../CSS/gumfreebootstrap.css" rel="stylesheet">
+    <!-- <link href="../CSS/gumfreebootstrap.css" rel="stylesheet"> -->
     <!--external css-->
     <link href="../CSS/gumfreefont-awesome.css" rel="stylesheet" />
         
@@ -24,18 +27,37 @@
     <link href="../CSS/gumfreestyle.css" rel="stylesheet">
     <link href="../CSS/gumfreestyle-responsive.css" rel="stylesheet">
 
-
-      <script src="../JS/prattjquery.min.js"></script>
-    <script src="../JS/prattsmoothscroll.js"></script>
-
     <!-- LOGIN -->
     <link href="../CSS/loginbootstrap.min.css" rel="stylesheet">
-    <!-- <link href="../login-modal-bootstrap/css/font-awesome.min.css" rel="stylesheet"> -->
-    <!-- <link href="../login-modal-bootstrap/css/style.css" rel="stylesheet"> -->
-    <!-- LOGIN -->
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../CSS/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../CSS/bootstrap-3.3.5-dist/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../CSS/distsb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../CSS/bootstrap-3.3.5-dist/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Datetimepicker Bootstrap -->
+    <link href="../CSS/bootstrap-3.3.5-dist/bootstrapdatetimepicker/css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
+    
+    <!-- Jasny Bootstrap for Image Upload -->
+    <link href="../CSS/bootstrap-3.3.5-dist/jasnybootstrap/css/jasny-bootstrap.min.css" rel="stylesheet" type="text/css">
+
 
     <!-- SWEETALERT CONFIRM -->
-    <script src="../CSS/sweet-alert.js"></script>
+    <script src="../JS/sweet-alert.js"></script>
     <link rel="stylesheet" href="../CSS/sweet-alert.css">
     <!-- SWEETALERT CONFIRM -->
 
@@ -67,14 +89,27 @@
               <a class="navbar-brand"><b>PROMOTION SYSTEM</b></a>
             </div>
             <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                            <li class="active"><a href="ownerpage.html" class="smothscroll">Home</a></li>                       
-                            <li class="#"><a class="smothScroll sweet-5"<span style="cursor:pointer" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);">Signout</span></a></li>
+                <ul class="nav navbar-nav">
+                            <li class=""><a href="ownerpage.html" class="smothscroll">Home</a></li>
+                            <li class=""><a href="newpromotionpage.html" class="smothscroll">New Promotion</a></li> 
+                            <li class="active"><a href="Datatables.html" class="smothscroll">Review Promotion</a></li>                       
+                            <!-- <li class="#"><a class="smothScroll sweet-5"<span style="cursor:pointer" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);">Signout</span></a></li> -->
                             <!-- <li class="#"><a class="smothScroll sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);">Signout</a></li> -->
-                        </ul>
+                            </ul>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                            <li class=""><a  class="smothscroll">User name</a></li>
+                            <!--li class="#"><a class="smothScroll sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);">User email</a></li-->
+                            <li class=""><a class="smothScroll sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);">Signout</a></li>
+                            </ul>
+            
+
+            <!-- <a class="navbar-text navbar-right">Signed in as <a href="#" class="navbar-link"><?=$_SESSION['idNum']; ?></a></a></p> -->
+              </div>
+              </div>  
             </div><!--/.nav-collapse -->
           </div>
-        </div>
+        
 
         <section id="home" name="home"></section>
     <div id="headerwrapdatatables">
@@ -149,12 +184,12 @@
                                 </thead>
                                     <tbody>
                                     <tr class="odd gradeX">
-                                        <td>JUALAN MURAH</td>
-                                        <td>30/5/2015</td>
-                                        <td>6/6/2015</td>
-                                        <td>7 DAYS</td>
-                                        <td>ACTIVE</td>
-                                        <td>200K</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                     </tbody>
                             </table>
