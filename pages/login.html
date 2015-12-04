@@ -9,14 +9,10 @@
 
     <title>OWNER LOGIN</title>
 
-    <!-- Bootstrap core CSS -->
     <link href="../CSS/gumfreebootstrap.css" rel="stylesheet">
-    <!--external css-->
-    <link href="../CSS/gumfreefont-awesome.css" rel="stylesheet" />
-        
-    <!-- Custom styles for this template -->
     <link href="../CSS/gumfreestyle.css" rel="stylesheet">
-    <link href="../CSS/gumfreestyle-responsive.css" rel="stylesheet">
+    <script src="../JS/bootstrap.min.js"></script>
+    <script src="../JS/jquery.js"></script>
 
     <!-- SWEETALERT CONFIRM -->
     <script src="../JS/sweet-alert.js"></script>
@@ -24,20 +20,11 @@
     <link href="../CSS/sweetdocs.css" rel="stylesheet">
     <!-- SWEETALERT CONFIRM -->
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
 
-      <!-- **********************************************************************************************************************************************************
-      MAIN CONTENT
-      *********************************************************************************************************************************************************** -->
-
-	  <div id="login-page">
+  	<div id="login-page">
 	  	<div class="container">
 	  	
 		      <form class="form-login" action="#">
@@ -54,32 +41,15 @@
 		                </span>
 		            </label>
 		            <p><button class="btn btn-theme btn-block sweet-3" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-3']);">Sign In</button></p>
-<!-- 
-		            <button class="btn btn-theme btn-block sweet-5" onclick="_gaq.push(['_trackEvent', 'example', 'try', 'sweet-5']);">SIGN IN</button> --><!-- 
-		            <button class="btn btn-theme btn-block" href="index.html" type="submit" onclick="myFunction()"><i class="fa fa-lock"></i> SIGN IN</button> -->
-		            		            
-		       
+
 		            <label class="checkbox">
 		                <span class="pull-center">
 		                Don't have an account yet?<br/>
 		                    <a data-toggle="modal" href="login.html#modalRegister"> Create An Account</a>
-		
 		                </span>
-		            <!-- <div class="login-social-link centered">
-		            <p>or you can sign in via your social network</p>
-		                <button class="btn btn-facebook" type="submit"><i class="fa fa-facebook"></i> Facebook</button>
-		                <button class="btn btn-twitter" type="submit"><i class="fa fa-twitter"></i> Twitter</button>
-		            </div>
-		            <div class="registration">
-		                Don't have an account yet?<br/>
-		                <a class="" href="#">
-		                    Create an account
-		                </a>
-		            </div> -->
-		
-		        </div>
-		
-		          <!-- Modal -->
+		                </div>
+
+		                <!-- Modal -->
 		          <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="myModal" class="modal fade">
 		              <div class="modal-dialog">
 		                  <div class="modal-content">
@@ -100,8 +70,8 @@
 		              </div>
 		          </div>
 		          <!-- modal -->
-		
-					<!-- modalregister -->
+
+		          <!-- modalregister -->
 		          <div aria-hidden="true" aria-labelledby="ModalRegisterLabel" role="dialog" tabindex="-1" id="modalRegister" class="modal fade">
 		              <div class="modal-dialog">
 		                  <div class="modal-content">
@@ -145,24 +115,17 @@
 		              </div>
 		          </div>
 		          <!-- modalregister -->
-
-		      </form>	  	
-	  	
+		          </form>	  	
 	  	</div>
 	  </div>
 
-    <!-- js placed at the end of the document so the pages load faster -->
-    <script src="../JS/gumfreejquery.js"></script>
-    <script src="../JS/gumfreebootstrap.min.js"></script>
-
-    <!--BACKSTRETCH-->
-    <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
-    <script type="text/javascript" src="../JS/gumfreejquery.backstretch.min.js"></script>
-    <script>
+	  <script type="text/javascript" src="../JS/gumfreebootstrap.min.js"></script>
+	  <script type="text/javascript" src="../JS/gumfreejquery.backstretch.min.js"></script>
+      <script>
         $.backstretch("../picture/loginbg.jpg", {speed: 500});
-    </script>
+      </script>
 
-    <!-- SWEETALERT -->
+      <!-- SWEETALERT -->
 <script type="text/javascript">
 
   		document.querySelector('.sweet-3').onclick = function(){
@@ -204,8 +167,7 @@
         });
       };
 </script>
-
     <!-- SWEETALERT -->
-    
-  </body>
+
+	</body>
 </html>
